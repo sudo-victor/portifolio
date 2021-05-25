@@ -21,6 +21,10 @@
     cursor: default;
   }
 
+  button.hamburguer {
+    display: none;
+  }
+
   nav {
     height: 100%;
     ul {
@@ -68,6 +72,64 @@
               left: 0;
 
               width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    button.hamburguer {
+      display: block;
+      background: none;
+      border-radius: 0;
+      font-size: 0;
+      border: 1px solid var(--primary);
+      cursor: pointer;
+    }
+    nav {
+      display: none;
+
+      &.activated {
+        display: block;
+
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        right: 0;
+
+        padding: 0 var(--padding);
+        width: 100%;
+        height: auto;
+
+        border-top: 2px solid var(--primary);
+        background: rgba(0, 0, 0, 0.8);
+
+        overflow: hidden;
+
+        ul {
+          padding: 0 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+
+          a {
+            li {
+              padding: 5px;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              span {
+                display: none;
+              }
+
+              &:hover {
+                color: var(--primary);
+              }
             }
           }
         }

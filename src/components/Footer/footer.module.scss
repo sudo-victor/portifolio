@@ -44,4 +44,10 @@
     color: var(--primary);
     cursor: default;
   }
+
+  @media (max-width: 736px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
 }

@@ -26,10 +26,9 @@ export default function Home() {
         <h2>Sobre Mim</h2>
 
         <p>
-          <strong>Olá</strong>, sou um estudante da programação visando ser no futuro um programador fullstack.  
-          Atualmente estou  focado nas tecnologias: Node, React e React Native, 
-          mas sempre em busca de novos conhecimentos. Também 
-          tive contato com as linguagens Python, PHP e Elixir. 
+          <strong>Olá</strong>, Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </div>
 
@@ -72,15 +71,13 @@ export default function Home() {
       </div>
 
       <div className={styles.items}>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>em breve</article>
+        <article>em breve</article>
+        <article>em breve</article>
+        <article>em breve</article>
+        <article>em breve</article>
+        <article>em breve</article>
+        <article>em breve</article>
       </div>
     </section>
 

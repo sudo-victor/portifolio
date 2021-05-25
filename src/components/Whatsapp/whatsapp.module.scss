@@ -1,0 +1,21 @@
+.whatsappComponent {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0;
+  background: var(--green);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px solid var(--black);
+
+  cursor: pointer;
+}

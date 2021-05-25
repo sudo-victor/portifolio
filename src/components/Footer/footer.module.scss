@@ -1,0 +1,47 @@
+.footerComponent {
+  width: 100vw;
+  height: 150px;
+  padding: var(--padding);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--gray800);
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      list-style: none;
+      margin-right: 15px;
+
+      button {
+        width: 32px;
+        height: 32px;
+
+        border: none;
+        background: none;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    letter-spacing: 0.18em;
+    color: var(--white);
+  }
+
+  .logo {
+    font-size: 24px;
+    font-family: "Signika", sans-serif;
+    color: var(--primary);
+    cursor: default;
+  }
+}

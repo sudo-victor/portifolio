@@ -1,0 +1,23 @@
+{
+  "skills": [
+    {
+      "name": "Javascript",
+      "color": "#ffa500"
+    },{
+      "name": "Typescript",
+      "color": "#2e75c3"
+    },{
+      "name": "Node.js",
+      "color": "#79bb44"
+    },{
+      "name": "ReactJS",
+      "color": "#2bade8"
+    },{
+      "name": "Sass",
+      "color": "#c86193"
+    },{
+      "name": "Expo",
+      "color": "#0f72b6"
+    }
+  ]
+}

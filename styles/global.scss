@@ -2,7 +2,10 @@
   --primary: #34d1bf;
   --black: #070707;
   --white: #efefef;
-  --gray: #202020;
+  --gray100: #3f3f3f;
+  --gray800: #202020;
+  --green: rgb(21, 164, 21);
+  --padding: 5.3rem;
 }
 
 * {
@@ -11,8 +14,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif, -apple-system;
   color: var(--black);
   background: var(--white);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }

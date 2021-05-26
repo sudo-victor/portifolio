@@ -72,11 +72,12 @@
     @media (max-width: 736px) {
       p {
         width: 80%;
+        font-size: 22px;
       }
 
       button.goDown {
         p {
-          font-size: 24px;
+          font-size: 18px;
         }
       }
     }
@@ -254,13 +255,17 @@
     align-items: center;
     justify-content: center;
 
-    button.cv {
+    a.cv {
       width: 215px;
       height: 55px;
 
       background: var(--white);
       border: 2.5px solid var(--black);
       font-size: 22px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       cursor: pointer;
       transition: all ease 200ms;

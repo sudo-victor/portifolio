@@ -65,9 +65,9 @@ export default function Home() {
     </section>
 
     <section className={styles.cvContainer} id="cv">
-      <button className={styles.cv}>
-        baixar cv
-      </button>
+        <a href="curriculo.pdf" download className={styles.cv}>
+          baixar cv
+        </a>
     </section>
 
     <section className={styles.projects} id="projects">

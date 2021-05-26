@@ -109,13 +109,14 @@
         overflow: hidden;
 
         ul {
-          padding: 0 5px;
+          padding: 0;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           justify-content: center;
 
           a {
+            width: 100%;
             li {
               padding: 5px;
 

@@ -1,28 +1,31 @@
 import { IoCloseOutline } from "react-icons/io5";
+import { useModalSkill } from "../../contexts/ModalSkillContext";
+import IconSkill from "../../helpers/Icon";
 
 import styles from './modal.module.scss';
 
 export default function ModalSkill() {
+  const { content, isActivated, toggleModal } = useModalSkill();
+
   return (
-    <div className={styles.modalComponent}>
+    <div className={isActivated ? styles.modalComponent : styles.disable}>
       <div className={styles.modal}>
         <header>
-          <div><span>Javascript</span></div>
+          <div>
+            <div style={{ background: content.color }}>
+              <IconSkill name={content.name} size={24}/>
+            </div>
+            <span>{content.name}</span>
+          </div>
 
-          <button>
+          <button onClick={toggleModal}>
             <IoCloseOutline color="#070707" size={32}/>
           </button>
         </header>
       
         <main>
           <p>
-            JavaScript é uma linguagem de programação interpretada estruturada, 
-            de script em alto nível com tipagem dinâmica fraca e multiparadigma. 
-            Juntamente com HTML e CSS, o JavaScript é uma das três principais 
-            tecnologias da internet. JavaScript permite páginas da Web 
-            interativas e, portanto, é uma parte essencial dos aplicativos da web. 
-            A grande maioria dos sites usa, e todos os principais navegadores 
-            têm um mecanismo JavaScript dedicado para executá-lo.
+            {content.about}
           </p>
         </main>
       </div>

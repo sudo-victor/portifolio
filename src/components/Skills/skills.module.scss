@@ -28,9 +28,23 @@ section.skillsComponent {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 35px;
 
     overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 2px; /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #d9d9d9; /* color of the scroll thumb */
+      border-radius: 20px; /* roucolor of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #c3c3c3; /* color of the scroll thumb */
+      border-radius: 20px; /* roundness of the scroll thumb */
+      // border: 3px solid var(--background); /* creates padding around scroll thumb */
+    }
 
     article {
       display: flex;
@@ -40,11 +54,13 @@ section.skillsComponent {
 
       padding-bottom: 15px;
 
-      div {
+      button {
         width: 125px;
         height: 125px;
 
         border-radius: 7px;
+        border: none;
+        cursor: pointer;
 
         display: flex;
         align-items: center;

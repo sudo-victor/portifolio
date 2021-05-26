@@ -1,20 +1,25 @@
 import { useState } from 'react';
-import { SiJavascript, SiTypescript, SiNodeDotJs, SiReact, SiSass, SiExpo, SiNextDotJs } from 'react-icons/si';
+import { useModalSkill } from '../../contexts/ModalSkillContext';
 
 import database from '../../data/database.json';
+import IconSkill from '../../helpers/Icon';
 import styles from './skills.module.scss';
+
+type Skill = {
+  name: string;
+  about: string;
+  color: string;
+}
+
 
 export default function Skills() {
   const [skills] = useState(database.skills);
-  const Icon = {
-    "Javascript": () => <SiJavascript color="#efefef" size={64}/>,
-    "Typescript": () => <SiTypescript color="#efefef" size={64}/>,
-    "Node.js": () => <SiNodeDotJs color="#efefef" size={64}/>,
-    "ReactJS": () => <SiReact color="#efefef" size={64}/>,
-    "Sass": () => <SiSass color="#efefef" size={64}/>,
-    "Expo": () => <SiExpo color="#efefef" size={64}/>,
-    "Next.JS": () => <SiNextDotJs color="#efefef" size={64}/>,
-  } as any
+  const { setContent, toggleModal } = useModalSkill();
+
+  function handleActivateModal(skill: Skill) {
+    setContent(skill);
+    toggleModal();
+  }
 
   return (
     <section className={styles.skillsComponent} id="skills">
@@ -25,9 +30,9 @@ export default function Skills() {
         {
           skills.map(skill => (
             <article key={skill.name}>
-              <div style={{background: skill.color}}>
-                {Icon[String(skill.name)]()}
-              </div>
+              <button style={{background: skill.color}} onClick={() => handleActivateModal(skill)}>
+                <IconSkill name={skill.name} size={64}/>
+              </button>
               <span>{skill.name}</span>
             </article>
            )

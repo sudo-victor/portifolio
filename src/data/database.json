@@ -37,5 +37,23 @@
       "color": "#000000",
       "about": "Next.js é um framework React com foco em produção e eficiência criado e mantido pela equipe da Vercel, o Nextjs busca reunir diversas funcionalidades como renderização hibrida e estática de conteúdo, suporte a TypeScript, pre-fetching, sistema de rotas, pacotes de funcionalidades e diversos plugins e exemplos para acelerar seu desenvolvimento fornecendo uma estrutura completa para você iniciar seu projeto. Inclusive esse site [e feito em Next.js"
     }
+  ],
+  "projects": [
+    {
+      "name": "Chronos",
+      "theme": "chronos.jpeg",
+      "colorBackground": "#ffffff",
+      "tags": ["EXPO", "REACT NATIVE", "JAVASCRIPT"]
+    },{
+      "name": "Checklist",
+      "theme": "checklist.jpeg",
+      "colorBackground": "#4dd8eb",
+      "tags": ["EXPO", "REACT NATIVE", "JAVASCRIPT"]
+    },{
+      "name": "DOE",
+      "theme": "https://github.com/sudo-victor/doe/blob/master/public/logo.png?raw=true",
+      "colorBackground": "#f9f9f9",
+      "tags": ["NODE.JS", "JAVASCRIPT", "HTML5/CSS3", "POSTGRESQL"]
+    }
   ]
 }

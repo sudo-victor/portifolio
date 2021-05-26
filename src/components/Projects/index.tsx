@@ -1,7 +1,12 @@
+import { useState } from 'react';
+import Image from 'next/image';
 
 import styles from './projects.module.scss';
+import database from '../../data/database.json';
 
 export default function Projects() {
+  const [projects] = useState(database.projects);
+
   return (
     <section className={styles.projectsComponent} id="projects">
       <h2>Projetos</h2>
@@ -13,8 +18,14 @@ export default function Projects() {
       </div>
 
       <div className={styles.items}>
-        <article>em breve</article>
-        <article>em breve</article>
+        {
+          projects.map(project => (
+            <article key={project.name} style={{ background: project.colorBackground}}>
+              <img src={project.theme} />
+            </article>
+          ))
+        }
+        
       </div>
     </section>
 

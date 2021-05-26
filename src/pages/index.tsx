@@ -1,8 +1,10 @@
 import styles from './index.module.scss';
-import {SiJavascript, SiTypescript, SiNodeDotJs, SiReact, SiSass, SiExpo} from 'react-icons/si';
+import { SiJavascript, SiTypescript, SiNodeDotJs, SiReact, SiSass, SiExpo } from 'react-icons/si';
+import { RiArrowDownSLine } from 'react-icons/ri';
 
 import database from '../data/database.json';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [skills] = useState(database.skills);
@@ -19,6 +21,13 @@ export default function Home() {
     <div id={styles.homePage}>
      <section className={styles.banner} id="home">
        <p>Aspirante a programador fullstack</p>
+
+      <Link href="#about">
+        <button className={styles.goDown}>
+          <p>Conheça o Victor</p>
+          <RiArrowDownSLine color="#efefef" size={64}/>
+        </button>
+      </Link>
      </section>
 
      <section className={styles.about} id="about">
@@ -104,6 +113,7 @@ export default function Home() {
         <button>enviar sua mensagem</button>
       </form>
     </section>
+    
     </div>
   )
 }

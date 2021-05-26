@@ -28,3 +28,9 @@ body {
 a {
   text-decoration: none;
 }
+
+@media (max-width: 736px) {
+  :root {
+    --padding: 1.8rem;
+  }
+}

@@ -31,6 +31,11 @@ export default function Header() {
           <li>sobre <span className={styles.borderBottom}></span></li>
             </a>
           </Link>
+          <Link href="#skills">
+            <a>
+          <li>skills <span className={styles.borderBottom}></span></li>
+            </a>
+          </Link>
           <Link href="#projects">
             <a>
           <li>projetos <span className={styles.borderBottom}></span></li>

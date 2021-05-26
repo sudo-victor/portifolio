@@ -1,0 +1,100 @@
+section.skillsComponent {
+  scroll-snap-align: center;
+  position: relative;
+  padding: 90px var(--padding);
+
+  width: 100vw;
+  margin-top: -35vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 5;
+
+  h2 {
+    margin-bottom: 45px;
+
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 26px;
+    color: var(--white);
+  }
+
+  div {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    overflow-x: scroll;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      padding-bottom: 15px;
+
+      div {
+        width: 125px;
+        height: 125px;
+
+        border-radius: 7px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+      }
+
+      span {
+        margin-top: 15px;
+
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & {
+      margin-top: 45px;
+
+      h2 {
+        color: var(--black);
+      }
+
+      div {
+        &::-webkit-scrollbar {
+          width: 2px; /* width of the entire scrollbar */
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #d9d9d9; /* color of the scroll thumb */
+          border-radius: 20px; /* roucolor of the tracking area */
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #c3c3c3; /* color of the scroll thumb */
+          border-radius: 20px; /* roundness of the scroll thumb */
+          // border: 3px solid var(--background); /* creates padding around scroll thumb */
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      padding: 20px var(--padding);
+      div {
+        padding: 0 20px;
+      }
+    }
+  }
+}

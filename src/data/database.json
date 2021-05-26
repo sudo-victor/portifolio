@@ -2,22 +2,32 @@
   "skills": [
     {
       "name": "Javascript",
-      "color": "#ffa500"
+      "color": "#ffa500",
+      "about": "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da internet. JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo."
     },{
       "name": "Typescript",
-      "color": "#2e75c3"
+      "color": "#2e75c3",
+      "about": "TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem. Anders Hejlsberg, arquiteto da linguagem C# e criador das linguagens Delphi e Turbo Pascal, trabalhou no desenvolvimento do TypeScript. A linguagem pode ser usada para desenvolver aplicações JavaScript no lado cliente e lado servidor."
     },{
       "name": "Node.js",
-      "color": "#79bb44"
+      "color": "#79bb44",
+      "about": "Node.js é um software de código aberto, multiplataforma, que executa códigos JavaScript no backend/servidor e frontend/interface, baseado no V8 interpretador de JavaScript em C++ do Google, mantido pela fundação Node.js em parceria com a Linux Foundation."
     },{
       "name": "ReactJS",
-      "color": "#2bade8"
+      "color": "#2bade8",
+      "about": "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros."
     },{
       "name": "Sass",
-      "color": "#c86193"
+      "color": "#c86193",
+      "about": "Sass é uma linguagem de folhas de estilo concebida inicialmente por Hampton Catlin e desenvolvida por Natalie Weizenbaum. Depois de suas versões iniciais, Weizenbaum e Chris Eppstein continuaram a estender Sass com SassScript, uma simples linguagem de script usada em arquivos Sass."
     },{
       "name": "Expo",
-      "color": "#0f72b6"
+      "color": "#0f72b6",
+      "about": "Expo é uma plataforma de código aberto para fazer aplicativos nativos universais para Android, iOS e web com JavaScript e React."
+    },{
+      "name": "Next.JS",
+      "color": "#000000",
+      "about": "Next.js é um framework React com foco em produção e eficiência criado e mantido pela equipe da Vercel, o Nextjs busca reunir diversas funcionalidades como renderização hibrida e estática de conteúdo, suporte a TypeScript, pre-fetching, sistema de rotas, pacotes de funcionalidades e diversos plugins e exemplos para acelerar seu desenvolvimento fornecendo uma estrutura completa para você iniciar seu projeto. Inclusive esse site [e feito em Next.js"
     }
   ]
 }

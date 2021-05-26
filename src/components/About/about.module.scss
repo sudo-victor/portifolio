@@ -1,0 +1,81 @@
+section.aboutComponent {
+  scroll-snap-align: center;
+  height: 100vh;
+
+  overflow: hidden;
+
+  background: var(--black);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  div {
+    padding: var(--padding);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      margin-bottom: 65px;
+
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 26px;
+      color: var(--white);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      text-align: justify;
+      letter-spacing: 0.25em;
+      color: var(--white);
+
+      strong {
+        font-size: 32px;
+        color: var(--primary);
+      }
+    }
+  }
+
+  .bannerAbout {
+    height: 100%;
+    position: relative;
+
+    background: url(../../assets/code.jpg);
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+
+      width: 100%;
+      height: 100%;
+
+      background: rgba(0, 0, 0, 0.8);
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      grid-template-columns: 1fr;
+
+      .bannerAbout {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 736px) {
+    & {
+      div {
+        align-items: center;
+      }
+    }
+  }
+}

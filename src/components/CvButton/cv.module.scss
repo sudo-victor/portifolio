@@ -1,0 +1,31 @@
+section.cvComponent {
+  scroll-snap-align: center;
+  width: 100vw;
+  margin: 25px 0 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a.cv {
+    width: 215px;
+    height: 55px;
+
+    background: var(--white);
+    border: 2.5px solid var(--black);
+    font-size: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all ease 200ms;
+
+    &:hover {
+      background: var(--green);
+      color: var(--white);
+      border-color: var(--green);
+    }
+  }
+}

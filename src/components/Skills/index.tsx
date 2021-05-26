@@ -2,18 +2,18 @@ import { useState } from 'react';
 import { useModalSkill } from '../../contexts/ModalSkillContext';
 
 import database from '../../data/database.json';
-import IconSkill from '../../helpers/Icon';
+import IconSkill from '../IconSkill/index.';
 import styles from './skills.module.scss';
 
 type Skill = {
-  name: string;
+  name: "Javascript" | "Typescript" | "Node.js" | "ReactJS" | "HTML5" | "CSS3" | "Sass" | "Expo" | "Next.JS";
   about: string;
   color: string;
 }
 
 
 export default function Skills() {
-  const [skills] = useState(database.skills);
+  const [skills] = useState<Skill[]>(database.skills as any);
   const { setContent, toggleModal } = useModalSkill();
 
   function handleActivateModal(skill: Skill) {
@@ -28,10 +28,10 @@ export default function Skills() {
       <div>
 
         {
-          skills.map(skill => (
+          skills.map((skill) => (
             <article key={skill.name}>
               <button style={{background: skill.color}} onClick={() => handleActivateModal(skill)}>
-                <IconSkill name={skill.name} size={64}/>
+                <IconSkill name={skill.name} size={64} />
               </button>
               <span>{skill.name}</span>
             </article>

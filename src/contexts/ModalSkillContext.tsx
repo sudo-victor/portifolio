@@ -5,7 +5,7 @@ type ModalSkillProps = {
 }
 
 type Content = {
-  name: string;
+  name: "Javascript" | "Typescript" | "Node.js" | "ReactJS" | "HTML5" | "CSS3" | "Sass" | "Expo" | "Next.JS";
   about: string;
   color: string;
 }

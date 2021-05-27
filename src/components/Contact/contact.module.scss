@@ -87,6 +87,7 @@ section.contactComponent {
       height: 55px;
 
       background: var(--gray800);
+      border-radius: 3px;
       border: none;
       font-size: 18px;
       line-height: 21px;
@@ -95,9 +96,9 @@ section.contactComponent {
       transition: all ease 200ms;
 
       &:hover {
-        background: var(--green);
+        background: var(--primary);
         color: var(--white);
-        border-color: var(--green);
+        border-color: var(--primary);
       }
     }
   }

@@ -7,20 +7,19 @@
 
   clip: rect(auto, auto, auto, auto);
 
-  z-index: 999;
   header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 
-    z-index: 3;
+    z-index: 999;
 
     width: 100vw;
     height: 10vh;
     padding: 0 var(--padding);
 
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.99);
 
     display: flex;
     align-items: center;

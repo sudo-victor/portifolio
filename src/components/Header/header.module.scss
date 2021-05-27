@@ -18,7 +18,7 @@
     font-size: 24px;
     font-family: "Signika", sans-serif;
     color: var(--primary);
-    cursor: default;
+    cursor: pointer;
   }
 
   button.hamburguer {
@@ -74,6 +74,15 @@
               width: 100%;
             }
           }
+        }
+      }
+      .currentActivate {
+        span.borderBottom {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+          width: 100%;
         }
       }
     }

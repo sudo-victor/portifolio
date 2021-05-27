@@ -21,7 +21,7 @@ export default function Projects() {
         {
           projects.map(project => (
             <article key={project.name} style={{ background: project.colorBackground}}>
-              <img src={project.theme} />
+              <img src={project.theme} alt={project.name}/>
             </article>
           ))
         }

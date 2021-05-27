@@ -46,12 +46,12 @@
   "projects": [
     {
       "name": "Chronos",
-      "theme": "chronos.jpeg",
+      "theme": "/projects/chronos.jpeg",
       "colorBackground": "#ffffff",
       "tags": ["EXPO", "REACT NATIVE", "JAVASCRIPT"]
     },{
       "name": "Checklist",
-      "theme": "checklist.jpeg",
+      "theme": "/projects/checklist.jpeg",
       "colorBackground": "#4dd8eb",
       "tags": ["EXPO", "REACT NATIVE", "JAVASCRIPT"]
     },{

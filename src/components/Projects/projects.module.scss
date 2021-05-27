@@ -74,6 +74,8 @@ section.projectsComponent {
 
         transition: all ease 200ms;
 
+        color: var(--black);
+
         &:hover {
           width: 120%;
         }

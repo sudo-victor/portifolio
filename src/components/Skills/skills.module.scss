@@ -4,7 +4,6 @@ section.skillsComponent {
   padding: 90px var(--padding);
 
   width: 100vw;
-  margin-top: -35vh;
 
   display: flex;
   flex-direction: column;
@@ -19,7 +18,7 @@ section.skillsComponent {
     font-weight: 300;
     font-size: 32px;
     line-height: 26px;
-    color: var(--white);
+    color: var(--black);
   }
 
   div {
@@ -80,8 +79,6 @@ section.skillsComponent {
 
   @media (max-width: 1024px) {
     & {
-      margin-top: 45px;
-
       h2 {
         color: var(--black);
       }

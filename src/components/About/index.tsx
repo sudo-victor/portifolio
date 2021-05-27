@@ -17,7 +17,13 @@ export default function About() {
        </Fade>
      </div>
 
-     <div className={styles.bannerAbout}></div>
+     <div className={styles.bannerAbout}>
+       <Fade right>
+        <div>
+          <img src="/img/eu.jpeg" alt="Foto do Victor Souto" />
+        </div>
+       </Fade>
+     </div>
     </section>
   )
 }

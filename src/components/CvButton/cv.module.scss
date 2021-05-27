@@ -12,8 +12,10 @@ section.cvComponent {
     height: 55px;
 
     background: var(--white);
-    border: 2.5px solid var(--black);
-    font-size: 22px;
+    border: 2px solid var(--black);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
 
     display: flex;
     align-items: center;
@@ -23,9 +25,9 @@ section.cvComponent {
     transition: all ease 200ms;
 
     &:hover {
-      background: var(--green);
+      background: var(--primary);
       color: var(--white);
-      border-color: var(--green);
+      border-color: var(--primary);
     }
   }
 }

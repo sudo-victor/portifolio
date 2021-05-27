@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useModalSkill } from '../../contexts/ModalSkillContext';
 
+import { useModalSkill } from '../../contexts/ModalSkillContext'; 
 import database from '../../data/database.json';
 import IconSkill from '../IconSkill/index.';
 import styles from './skills.module.scss';
@@ -36,8 +36,8 @@ export default function Skills() {
               <span>{skill.name}</span>
             </article>
            )
-          )
-        }
+           )
+          }
 
       </div>
 

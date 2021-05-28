@@ -11,12 +11,12 @@ export default function Banner() {
   function handleTypeWriter(typewriter: TypewriterClass) {
   
        typewriter
-       .typeString("backend")
+       .typeString("back-end")
          
        .pauseFor(1000)
        .deleteAll()
 
-       .typeString("frontend")
+       .typeString("front-end")
 
        .pauseFor(1000)
        .deleteAll()

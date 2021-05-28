@@ -16,10 +16,11 @@ section.projectsComponent {
   }
 
   div.tags {
+    z-index: 9;
     button {
       width: 115px;
       height: 30px;
-      margin-right: 15px;
+      margin: 5px 5px 0px 0px;
 
       border-radius: 0;
       border: 1px solid #b1b1b1;
@@ -28,6 +29,8 @@ section.projectsComponent {
       background: var(--white);
 
       cursor: pointer;
+
+      z-index: 999;
 
       transition: all ease 200ms;
 
@@ -78,25 +81,6 @@ section.projectsComponent {
 
         &:hover {
           width: 120%;
-        }
-      }
-
-      div.tags {
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        flex-wrap: wrap;
-
-        span {
-          margin-left: 5px;
-          padding: 5px;
-
-          background: var(--primary);
-
-          color: var(--black);
-          font-size: 10px;
         }
       }
 

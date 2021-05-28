@@ -8,12 +8,12 @@ export default function Contact() {
       <div>
           <h2>Meu Contato</h2>
 
-        <p>Resta alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entraremos em contato.</p>
+        <p>Resta alguma dúvida? Preencha os campos com os seguintes dados que em breve entraremos em contato.</p>
 
         <p>
-          E-MAIL: MEU@EMAIL.COM.BR<br/><br/>
-          WHATSAPP: +55 21 96545-1909<br/><br/>
-          ENDEREÇO: JACAREPAGUÁ, RJ
+          E-MAIL: victorsoutosoares@gmail.com<br/><br/>
+          WHATSAPP: +55 21 99820-0330<br/><br/>
+          ENDEREÇO: Jacarepaguá, RJ
         </p>
       </div>
 

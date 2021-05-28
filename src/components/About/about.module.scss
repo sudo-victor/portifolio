@@ -88,10 +88,11 @@ section.aboutComponent {
 
   @media (max-width: 768px) {
     & {
+      height: auto;
       grid-template-columns: 1fr;
 
-      .bannerAbout {
-        display: none;
+      img {
+        height: 100%;
       }
     }
   }

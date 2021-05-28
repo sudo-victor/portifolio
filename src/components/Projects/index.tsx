@@ -1,26 +1,51 @@
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 
 import styles from './projects.module.scss';
 import database from '../../data/database.json';
+
+type Project = {
+  name: string;
+  theme: string;
+  colorBackground: string;
+  tags: string[];
+}
 
 export default function Projects() {
   const [projects] = useState(database.projects);
   const [tags, setTags] = useState<string[]>([]);
   const [currentTag, setCurrentTag] = useState("todos");
+  const [currentProjects, setCurrentProjects] = useState<Project[]>(projects);
 
   useEffect(() => {
     function getAllTags() {
       let getTagsInProjectsList = projects.map(project => project.tags).flat();
-      const filterTags = ["todos", ...new Set(getTagsInProjectsList)]
+      const filterTags = ["todos", ...new Set(getTagsInProjectsList)];
+
       setTags(filterTags);
     }
     getAllTags()
   }, [])
 
+  useEffect(() => {
+
+    function loadCurrentProjects() {
+      if(currentTag === "todos") {
+        const allProjects = [...projects];
+        setCurrentProjects(allProjects);
+
+        return;
+      }
+
+      const currentProjectsFiltered = projects.filter(project => project.tags.includes(currentTag));
+      setCurrentProjects(currentProjectsFiltered);
+    }
+
+    loadCurrentProjects()
+
+  }, [currentTag])
+
   function handleChooseTag(text: string) {
     setCurrentTag(text);
-    console.log("teste")
   }
 
   return (
@@ -40,7 +65,7 @@ export default function Projects() {
 
       <div className={styles.items}>
         {
-          projects.map(project => (
+          currentProjects.map(project => (
             <article key={project.name} style={{ background: project.colorBackground}}>
               <img src={project.theme} alt={project.name}/>
             </article>

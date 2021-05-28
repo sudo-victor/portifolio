@@ -1,12 +1,11 @@
-import { useState } from 'react';
 import Link from 'next/link';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import Typewriter, { TypewriterClass } from "typewriter-effect";
+import { Fade } from "react-reveal";
 
 import styles from './banner.module.scss';
 
 export default function Banner() {
-  const [text, setText] = useState("")
 
   function handleTypeWriter(typewriter: TypewriterClass) {
   
@@ -32,11 +31,12 @@ export default function Banner() {
        onInit={handleTypeWriter}
        />
       </p>
-
       <Link href="#about">
         <button className={styles.goDown}>
-          <p>Conheça o Victor</p>
-          <RiArrowDownSLine color="#efefef" size={64}/>
+        <Fade bottom>
+            <p>Conheça o Victor</p>
+            <RiArrowDownSLine color="#efefef" size={64}/>
+        </Fade>
         </button>
       </Link>
     </section>

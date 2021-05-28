@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react';
 
 import styles from './projects.module.scss';
 import database from '../../data/database.json';
+import Link from 'next/link';
 
 type Project = {
+  id: string;
   name: string;
   theme: string;
   colorBackground: string;
@@ -66,9 +68,14 @@ export default function Projects() {
       <div className={styles.items}>
         {
           currentProjects.map(project => (
-            <article key={project.name} style={{ background: project.colorBackground}}>
+            <Link href={`/projects/${project.id}`}>
+            <button 
+              key={project.id} 
+              style={{ background: project.colorBackground}}
+              >
               <img src={project.theme} alt={project.name}/>
-            </article>
+            </button>
+                </Link>
           ))
         }
         

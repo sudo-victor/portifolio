@@ -45,20 +45,65 @@
   ],
   "projects": [
     {
+      "id": "chronos",
       "name": "Chronos",
-      "theme": "/projects/chronos.jpeg",
+      "theme": "/projects/chronos/chronos.jpeg",
       "colorBackground": "#ffffff",
-      "tags": ["EXPO", "REACT NATIVE", "JAVASCRIPT"]
+      "tags": ["EXPO", "REACT NATIVE", "JAVASCRIPT"],
+      "description": "Aplicativo feito com Expo, criado em 2020. Solução voltada para praticantes de exercícios físicos.",
+      "thumbnail": "/projects/chronos/icon.png",
+      "github": "https://github.com/sudo-victor/chronos",
+      "hasSite": false,
+      "site": "",
+      "widthDemos": "200px",
+      "demos": ["/projects/chronos/home.jpeg","/projects/chronos/home-save-modal.jpeg","/projects/chronos/drawer.jpeg","/projects/chronos/list.jpeg","/projects/chronos/single-item.jpeg","/projects/chronos/awaiting-time.jpeg","/projects/chronos/working-time.jpeg","/projects/chronos/resting-time.jpeg","/projects/chronos/win.jpeg"]
     },{
+      "id": "checklist",
       "name": "Checklist",
-      "theme": "/projects/checklist.jpeg",
+      "theme": "/projects/checklist/checklist.jpeg",
       "colorBackground": "#4dd8eb",
-      "tags": ["EXPO", "REACT NATIVE", "JAVASCRIPT"]
+      "tags": ["EXPO", "REACT NATIVE", "JAVASCRIPT"],
+      "description": "Aplicativo IOS e Android feito com Expo. Com objetivo de auxiliar nas atividades diárias.",
+      "thumbnail": "/projects/checklist/icon.png",
+      "github": "https://github.com/sudo-victor/checklist",
+      "hasSite": false,
+      "site": "",
+      "widthDemos": "200px",
+      "demos": [
+        "/projects/checklist/light-home-1.jpeg",
+        "/projects/checklist/light-home-2.jpeg",
+        "/projects/checklist/light-form.jpeg",
+        "/projects/checklist/light-settings.jpeg",
+        "/projects/checklist/light-themes.jpeg",
+        "/projects/checklist/dracula-home-1.jpeg",
+        "/projects/checklist/dracula-home-2.jpeg",
+        "/projects/checklist/dracula-form.jpeg",
+        "/projects/checklist/dracula-settings.jpeg",
+        "/projects/checklist/dracula-themes.jpeg",
+        "/projects/checklist/dark-home-1.jpeg",
+        "/projects/checklist/dark-home-2.jpeg",
+        "/projects/checklist/dark-form.jpeg",
+        "/projects/checklist/dark-settings.jpeg",
+        "/projects/checklist/dark-themes.jpeg",
+        "/projects/checklist/unicorn-home-1.jpeg",
+        "/projects/checklist/unicorn-home-2.jpeg",
+        "/projects/checklist/unicorn-form.jpeg",
+        "/projects/checklist/unicorn-settings.jpeg",
+        "/projects/checklist/unicorn-themes.jpeg"
+      ]
     },{
+      "id": "doe",
       "name": "DOE",
       "theme": "https://github.com/sudo-victor/doe/blob/master/public/logo.png?raw=true",
       "colorBackground": "#f9f9f9",
-      "tags": ["NODE.JS", "JAVASCRIPT", "HTML5/CSS3", "POSTGRESQL"]
+      "tags": ["NODE.JS", "JAVASCRIPT", "HTML5/CSS3", "POSTGRESQL"],
+      "description": "Um simples site de doação de sangue feito com Node.js e EJS.",
+      "thumbnail": "/projects/doe/logo.png",
+      "github": "https://github.com/sudo-victor/doe.png",
+      "hasSite": false,
+      "site": "",
+      "widthDemos": "700px",
+      "demos": ["/projects/doe/snapshot-1.png","/projects/doe/snapshot-2.png"]
     }
   ]
 }

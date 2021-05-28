@@ -7,7 +7,7 @@ section.projectsComponent {
   justify-content: flex-start;
 
   h2 {
-    margin: 0 0 45px 0;
+    margin: 0 0 25px 0;
 
     text-transform: uppercase;
     font-weight: 300;
@@ -18,13 +18,12 @@ section.projectsComponent {
   div.tags {
     z-index: 9;
     button {
-      width: 115px;
-      height: 30px;
       margin: 5px 5px 0px 0px;
+      padding: 5px 10px;
 
       border-radius: 0;
       border: 1px solid #b1b1b1;
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
       background: var(--white);
 
@@ -41,6 +40,7 @@ section.projectsComponent {
       &.activated {
         border: 1px solid var(--primary);
         background: var(--primary);
+        box-shadow: 4px 4px 5px #ddd;
       }
     }
   }
@@ -54,7 +54,7 @@ section.projectsComponent {
     justify-content: flex-start;
     gap: 15px;
 
-    article {
+    button {
       position: relative;
       width: 200px;
       height: 250px;
@@ -64,7 +64,8 @@ section.projectsComponent {
       justify-content: center;
 
       color: var(--white);
-      border-radius: 10px;
+      border-radius: 1px;
+      border: none;
       box-shadow: 4px 4px 5px #ddd;
 
       overflow: hidden;
@@ -135,7 +136,7 @@ section.projectsComponent {
         align-items: center;
         justify-content: space-between;
 
-        article {
+        button {
           width: 100%;
           height: 320px;
         }

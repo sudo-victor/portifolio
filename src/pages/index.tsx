@@ -12,18 +12,18 @@ export default function Home() {
 
   return (
     <div id={styles.homePage}>
-      <div className={styles.containerSection}>
+      <section className={styles.containerSection}>
       <Header />
       <Banner />
       <About />
-      </div>
-      <div className={styles.containerSection}>
+      </section>
+      <section className={styles.containerSection}>
       <Header isWhite />
       <Skills />
       <CvButton />
       <Projects />
       <Contact />
-      </div>
+      </section>
 
     </div>
   )

@@ -1,6 +1,8 @@
 type Props = {
   left?: boolean;
   right?: boolean;
+  top?: boolean;
+  bottom?: boolean;
 }
 
 declare module 'react-reveal' {

@@ -24,7 +24,7 @@ export default function Footer() {
     </ul>
 
     <p>Copyright &copy; Victor Souto.</p>
-    <Link href="#home">
+    <Link href="#top">
       <h1 className={styles.logo}> &lt;/ victor souto &gt; </h1>
     </Link>
     </div>

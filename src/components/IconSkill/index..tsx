@@ -1,4 +1,4 @@
-import { SiJavascript, SiTypescript, SiNodeDotJs, SiReact, SiSass, SiExpo, SiNextDotJs, SiHtml5, SiCss3 } from 'react-icons/si';
+import { SiJavascript, SiTypescript, SiNodeDotJs, SiReact, SiSass, SiExpo, SiNextDotJs, SiHtml5, SiCss3, SiLinux } from 'react-icons/si';
 import { DiScrum } from 'react-icons/di';
 
 type IconSkillProps = {
@@ -18,6 +18,7 @@ export default function IconSkill({ name, size }: IconSkillProps) {
     "Expo": ( size: number ) => <SiExpo color="#efefef" size={size}/>,
     "Next.JS": ( size: number ) => <SiNextDotJs color="#efefef" size={size}/>,
     "Scrum": ( size: number ) => <DiScrum color="#efefef" size={size}/>,
+    "Linux": ( size: number ) => <SiLinux color="#efefef" size={size}/>,
   };
 
   return (

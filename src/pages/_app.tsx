@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app';
+import { ToastContainer } from 'react-toastify';
 
 import '../../styles/global.scss';
 import Footer from '../components/Footer';
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Footer />
         <ModalSkill />
       </HeaderProvider>
+      <ToastContainer />
     </ModalSkillProvider>
   )
 }

@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 
 import Banner from '../components/Banner';
 import styles from './index.module.scss';
@@ -12,6 +13,10 @@ export default function Home() {
 
   return (
     <div id={styles.homePage}>
+    <NextSeo
+      title={`Victor Souto | Aspirante a Programador`}
+      description="Oi eu sou o Goku!"
+    />
       <section className={styles.containerSection}>
       <Header />
       <Banner />

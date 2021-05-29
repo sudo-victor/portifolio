@@ -40,7 +40,10 @@
       "name": "Scrum",
       "color": "#2e75c3",
       "about": "O Scrum é um framework de gerenciamento de projetos, da organização ao desenvolvimento ágil de produtos complexos e adaptativos com o mais alto valor possível, através de várias técnicas, utilizado desde o início de 1990 e que atualmente é utilizado em mais de 60% dos projetos ágeis em todo o mundo."
-      
+    },{
+      "name": "Linux",
+      "color": "#e9a11d",
+      "about": "GNU/Linux é um sistema operacional Unix-like baseado no GNU e no kernel Linux que, como qualquer sistema operacional, maneja o hardware do computador e possibilita a execução de outros programas. "
     }
   ],
   "projects": [
@@ -99,7 +102,7 @@
       "tags": ["NODE.JS", "JAVASCRIPT", "HTML5/CSS3", "POSTGRESQL"],
       "description": "Um simples site de doação de sangue feito com Node.js e EJS.",
       "thumbnail": "/projects/doe/logo.png",
-      "github": "https://github.com/sudo-victor/doe.png",
+      "github": "https://github.com/sudo-victor/doe",
       "hasSite": false,
       "site": "",
       "widthDemos": "700px",

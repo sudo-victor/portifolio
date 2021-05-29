@@ -1,5 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from "next";
-import { BsArrowLeft } from 'react-icons/bs'
+import { BsArrowLeft } from 'react-icons/bs';
+import { NextSeo } from 'next-seo';
 
 import Header from '../../components/Header';
 import styles from './project.module.scss';
@@ -8,6 +9,7 @@ import Link from 'next/link';
 import database from '../../data/database.json';
 import Mockup from "../../components/Mockup";
 import DescriptionProject from "../../components/DescriptionProject";
+import { Head } from "next/document";
 
 type Project = {
   id: string;
@@ -31,7 +33,13 @@ type ProjectProps = {
 export default function Project({ project }: ProjectProps) {
 
   return (
+    <>
+    <NextSeo
+      title={`Victor Souto | ${project.name}`}
+      description={project.description}
+    />
     <div className={styles.projectPage}>
+
       <section className={styles.containerSection}>
 
         <Header isWhite/>
@@ -52,6 +60,7 @@ export default function Project({ project }: ProjectProps) {
       </section>
       
     </div>
+    </>
   )
 }
 

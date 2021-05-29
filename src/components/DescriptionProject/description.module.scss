@@ -61,6 +61,10 @@ section.descriptionComponent {
           color: var(--white);
           cursor: pointer;
 
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
           z-index: 9;
 
           transition: all ease 200ms;

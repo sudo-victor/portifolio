@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { AiFillGithub } from 'react-icons/ai';
 
 import styles from './description.module.scss';
 
@@ -35,7 +36,10 @@ export default function DescriptionProject({ project }: DescriptionProjectProps)
           <h3>{project?.name}</h3>
           <div className={styles.linksToProject}>
             <Link href={String(project?.github)}>
-              <a target="_blank">ver no github</a>
+              <a target="_blank">
+                ver no github
+                <AiFillGithub size={18} color="#efefef" style={{marginLeft: "5px"}}/>
+              </a>
             </Link>
             {
               project?.hasSite && (

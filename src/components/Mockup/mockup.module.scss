@@ -1,0 +1,74 @@
+section.mockupComponent {
+  padding-top: 10vh;
+  min-height: 100vh;
+  padding: var(--padding);
+  padding-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+
+  button.controlDemo {
+    padding: 5px 10px;
+
+    border: none;
+    background: var(--primary);
+    box-shadow: 2px 2px 5px rgb(169, 169, 169);
+    cursor: pointer;
+
+    z-index: 9;
+
+    transition: all ease 200ms;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  div.mockup {
+    margin: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    border: 1px solid var(--gray100);
+    box-shadow: 4px 4px 10px rgb(162, 162, 162);
+    border-radius: 5px;
+
+    overflow: hidden;
+    &::-webkit-scrollbar {
+      width: 2px; /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff; /* color of the scroll thumb */
+      border-radius: 20px; /* roucolor of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #dedede; /* color of the scroll thumb */
+      border-radius: 20px; /* roundness of the scroll thumb */
+      // border: 3px solid var(--background); /* creates padding around scroll thumb */
+    }
+
+    z-index: 99;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
+    img {
+      width: 100%;
+
+      scroll-snap-align: start;
+    }
+  }
+
+  @media (max-width: 736px) {
+    div.mockup {
+      width: 100vw !important;
+    }
+  }
+}

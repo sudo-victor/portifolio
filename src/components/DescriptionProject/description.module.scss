@@ -1,0 +1,161 @@
+section.descriptionComponent {
+  height: auto;
+  background: var(--black);
+  padding: var(--padding);
+
+  div.headerDescription {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    div.logo {
+      width: 124px;
+      height: 124px;
+
+      background: var(--white);
+      border-radius: 10px;
+      overflow: hidden;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    div.info {
+      height: 100%;
+      margin-left: 15px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      h3 {
+        margin-bottom: 15px;
+
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: var(--white);
+        text-transform: uppercase;
+      }
+
+      div.linksToProject {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        a {
+          padding: 5px;
+          margin-right: 5px;
+
+          background: none;
+          border: 1px solid var(--white);
+          border-radius: 0px;
+          color: var(--white);
+          cursor: pointer;
+
+          z-index: 9;
+
+          transition: all ease 200ms;
+
+          &:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: var(--black);
+          }
+        }
+      }
+    }
+  }
+
+  div.skills {
+    margin-top: 45px;
+
+    h2 {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 26px;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    div.tags {
+      margin-top: 35px;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      overflow: hidden;
+
+      span {
+        width: 120px;
+        height: 30px;
+        margin-right: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: var(--black);
+        background: var(--primary);
+        border-radius: 5px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  div.description {
+    margin-top: 45px;
+
+    h2 {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 26px;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 35px;
+
+      color: var(--white);
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  @media (max-width: 736px) {
+    div.headerDescription {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      div.info {
+        margin: 15px 0 0 0;
+        align-items: center;
+      }
+    }
+
+    div.skills {
+      div.tags {
+        height: 100px;
+        justify-content: center;
+
+        span {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

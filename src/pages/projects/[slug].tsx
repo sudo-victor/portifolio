@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { GetStaticProps, GetStaticPaths } from "next";
 import { BsArrowLeft } from 'react-icons/bs'
 
 import Header from '../../components/Header';
@@ -6,7 +6,8 @@ import styles from './project.module.scss';
 import Link from 'next/link';
 
 import database from '../../data/database.json';
-import { useRouter } from 'next/dist/client/router';
+import Mockup from "../../components/Mockup";
+import DescriptionProject from "../../components/DescriptionProject";
 
 type Project = {
   id: string;
@@ -23,91 +24,76 @@ type Project = {
   site: string;
 }
 
-export default function Project() {
-  const router = useRouter();
-  const {slug} = router.query;
-  const [project, setProject] = useState<Project>();
+type ProjectProps = {
+  project: Project;
+}
 
-  useEffect(() => {
-
-    function setProjectBySlug() {
-      const projectById = database.projects.find((project) => project.id === slug);
-      setProject(projectById);
-    }
-
-    setProjectBySlug()
-  }, [])
+export default function Project({ project }: ProjectProps) {
 
   return (
     <div className={styles.projectPage}>
       <section className={styles.containerSection}>
+
         <Header isWhite/>
+
         <Link href="/">
           <button className={styles.goBack}>
-                  <BsArrowLeft color="#333" size={24}/>
+            <BsArrowLeft color="#333" size={24}/> Voltar
           </button>
         </Link>
-        <section className={styles.mockupContainer}>
-
-          <div className={styles.mockup} style={{width: project?.widthDemos}}>
-                {
-                  project?.demos.map(demo => (
-                    <img key={demo} src={demo} alt="" />
-                  ))
-                }
-          </div>
-
-        </section>
+      
+        <Mockup project={project}/>
       </section>
 
       <section className={styles.containerSection}>
         <Header />
-        <section className={styles.descriptionContainer}>
-          <div className={styles.headerDescription}>
-            <div className={styles.logo} style={{ background: project?.colorBackground}}>
-              <img src={project?.thumbnail} alt={project?.name} />
-            </div>
-            <div className={styles.info}>
-              <h3>{project?.name}</h3>
-              <div className={styles.linksToProject}>
-                <Link href={String(project?.github)}>
-                  <a target="_blank">ver no github</a>
-                </Link>
-                {
-                  project?.hasSite && (
-                    <Link href={project.site}>
-                      <a target="_blank">ver projeto</a>
-                    </Link>
-                  )
-                }
-              </div>
-            </div>
-          </div>
-          
-          <div className={styles.skills}>
-              <h2>Tecnologias</h2>
 
-              <div className={styles.tags}>
-                {
-                  project?.tags.map(tag => (
-                    <span key={tag}>{tag}</span>
-                  ))
-                }
-              </div>
-          </div>
-        
-          <div className={styles.description}>
-            <h2>Descrição</h2>
-
-            <p>
-            {project?.description}
-            </p>
-          </div>
-        
-        </section>
-        
+        <DescriptionProject project={project}/>
       </section>
       
     </div>
   )
+}
+
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const projects = database.projects
+
+  const paths = projects.map(project => {
+    return {params: {
+      slug: project.id
+    }}
+  })
+
+  return {
+    paths: paths,
+    fallback: 'blocking'
+  }
+}
+
+export const getStaticProps: GetStaticProps =  async (ctx) => {
+  const slug = ctx.params?.slug
+  const projectById = database.projects.find((project) => project.id === slug);
+
+  const project = {
+    id: projectById?.id || null,
+    name: projectById?.name || null,
+    theme: projectById?.theme || null,
+    colorBackground: projectById?.colorBackground || null,
+    tags: projectById?.tags,
+    description: projectById?.description || null,
+    demos: projectById?.demos,
+    widthDemos: projectById?.widthDemos || null,
+    thumbnail: projectById?.thumbnail,
+    github: projectById?.github,
+    hasSite: projectById?.hasSite || null,
+    site: projectById?.site || null
+    }
+
+  return {
+    props: {
+      project
+    },
+    revalidate: 60 * 60 * 24 * 2, // 2 days
+  }
 }

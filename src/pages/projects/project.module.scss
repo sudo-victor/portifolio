@@ -12,6 +12,8 @@ div.projectPage {
       position: absolute;
       top: 14vh;
       right: var(--padding);
+      z-index: 99;
+
       padding: 5px 10px;
 
       display: flex;

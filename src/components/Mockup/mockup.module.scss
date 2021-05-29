@@ -1,6 +1,8 @@
 section.mockupComponent {
-  padding-top: 10vh;
+  position: relative;
+
   min-height: 100vh;
+  width: 100vw;
   padding: var(--padding);
   padding-bottom: 25px;
 
@@ -17,7 +19,7 @@ section.mockupComponent {
     box-shadow: 2px 2px 5px rgb(169, 169, 169);
     cursor: pointer;
 
-    z-index: 9;
+    z-index: 99;
 
     transition: all ease 200ms;
 
@@ -53,7 +55,7 @@ section.mockupComponent {
       // border: 3px solid var(--background); /* creates padding around scroll thumb */
     }
 
-    z-index: 99;
+    z-index: 9;
 
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -67,8 +69,21 @@ section.mockupComponent {
   }
 
   @media (max-width: 736px) {
-    div.mockup {
-      width: 100vw !important;
+    & {
+      padding: 0px;
+
+      button.controlDemo {
+        position: absolute;
+
+        right: 10px;
+
+        &:first-child {
+          left: 10px;
+        }
+      }
+      div.mockup {
+        margin: 0;
+      }
     }
   }
 }

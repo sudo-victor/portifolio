@@ -40,6 +40,7 @@ export default function Mockup({ project }: MockupProps) {
     <button 
       className={styles.controlDemo}
       onClick={handlePreviousDemo}
+      style={{ background: project.demos.length === 0 ? "#333" : "#34d1bf" }}
     >
           <BsArrowLeft size={32} color="#333" />
     </button>
@@ -51,6 +52,7 @@ export default function Mockup({ project }: MockupProps) {
     <button 
       className={styles.controlDemo}
       onClick={handleNextDemo}
+      style={{ background: project.demos.length === 0 ? "#333" : "#34d1bf" }}
     >
           <BsArrowRight size={32} color="#333" />
     </button>

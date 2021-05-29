@@ -73,6 +73,10 @@ export default function Projects() {
               key={project.id} 
               style={{ background: project.colorBackground}}
               >
+                <div>
+                  {project.name}
+                </div>
+
               <img src={project.theme} alt={project.name}/>
             </button>
                 </Link>

@@ -107,6 +107,45 @@
       "site": "",
       "widthDemos": "700px",
       "demos": ["/projects/doe/snapshot-1.png","/projects/doe/snapshot-2.png"]
+    },{
+      "id": "calculator",
+      "name": "Calculator",
+      "theme": "/projects/calculator/c-t.png",
+      "colorBackground": "#191622",
+      "tags": ["React.JS", "JAVASCRIPT", "HTML5/CSS3"],
+      "description": "Um simples site de doação de sangue feito com Node.js e EJS.",
+      "thumbnail": "/projects/calculator/calculator.png",
+      "github": "https://github.com/sudo-victor/calculator",
+      "hasSite": false,
+      "site": "",
+      "widthDemos": "700px",
+      "demos": ["/projects/calculator/page.png"]
+    },{
+      "id": "bin2dec",
+      "name": "Bin2Dec",
+      "theme": "/projects/bin2dec/b2d-t.png",
+      "colorBackground": "#073B3A",
+      "tags": ["React.JS", "JAVASCRIPT", "HTML5/CSS3"],
+      "description": "Um simples site de doação de sangue feito com Node.js e EJS.",
+      "thumbnail": "/projects/bin2dec/bin2dec.png",
+      "github": "https://github.com/sudo-victor/converterBin2Dec",
+      "hasSite": false,
+      "site": "",
+      "widthDemos": "700px",
+      "demos": ["/projects/bin2dec/page.png"]
+    },{
+      "id": "border-radius",
+      "name": "Border Radius",
+      "theme": "/projects/border-radius/br-t.png",
+      "colorBackground": "#41414D",
+      "tags": ["React.JS", "JAVASCRIPT", "HTML5/CSS3"],
+      "description": "Um simples site de doação de sangue feito com Node.js e EJS.",
+      "thumbnail": "/projects/border-radius/border-radius.png",
+      "github": "https://github.com/sudo-victor/border-radius",
+      "hasSite": false,
+      "site": "",
+      "widthDemos": "700px",
+      "demos": ["/projects/border-radius/page.png"]
     }
   ]
 }

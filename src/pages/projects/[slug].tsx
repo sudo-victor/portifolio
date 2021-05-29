@@ -9,7 +9,8 @@ import Link from 'next/link';
 import database from '../../data/database.json';
 import Mockup from "../../components/Mockup";
 import DescriptionProject from "../../components/DescriptionProject";
-import { Head } from "next/document";
+import { useRouter } from "next/dist/client/router";
+import { useEffect } from "react";
 
 type Project = {
   id: string;
@@ -31,6 +32,13 @@ type ProjectProps = {
 }
 
 export default function Project({ project }: ProjectProps) {
+  const router = useRouter()
+
+  useEffect(() => {
+    if(!project) {
+      router.push('/')
+    }
+  }, [])
 
   return (
     <>
@@ -63,7 +71,6 @@ export default function Project({ project }: ProjectProps) {
     </>
   )
 }
-
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const projects = database.projects

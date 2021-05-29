@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 
 import Banner from '../components/Banner';
-import styles from './index.module.scss';
+import styles from '../../styles/index.module.scss';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import CvButton from '../components/CvButton';

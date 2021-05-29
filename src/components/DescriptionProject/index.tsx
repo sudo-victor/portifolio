@@ -43,7 +43,7 @@ export default function DescriptionProject({ project }: DescriptionProjectProps)
             </Link>
             {
               project?.hasSite && (
-                <Link href={project.site}>
+                <Link href={project?.site}>
                   <a target="_blank">ver projeto</a>
                 </Link>
               )

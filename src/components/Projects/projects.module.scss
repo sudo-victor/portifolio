@@ -85,6 +85,20 @@ section.projectsComponent {
         }
       }
 
+      div {
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: rgba(07, 07, 07, 0.8);
+      }
+
       &:hover {
         div.info {
           position: absolute;

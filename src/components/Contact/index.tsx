@@ -15,7 +15,19 @@ export default function Contact() {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    if( name === "" && email === "" && cellphone === "" && about === "" && message === ""  ) {
+    if( name === "") {
+      notifyError();
+      return;
+    } else if( email === "") {
+      notifyError();
+      return;
+    }else if( cellphone === "") {
+      notifyError();
+      return;
+    }else if( about === "") {
+      notifyError();
+      return;
+    } else if( message === "") {
       notifyError();
       return;
     }

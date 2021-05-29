@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { AiFillGithub } from 'react-icons/ai';
+import { BiWorld } from 'react-icons/bi';
 
 import styles from './description.module.scss';
 
@@ -44,7 +45,10 @@ export default function DescriptionProject({ project }: DescriptionProjectProps)
             {
               project?.hasSite && (
                 <Link href={project?.site}>
-                  <a target="_blank">ver projeto</a>
+                  <a target="_blank">
+                    ver projeto
+                    <BiWorld size={18} color="#efefef" style={{marginLeft: "5px"}}/>
+                  </a>
                 </Link>
               )
             }

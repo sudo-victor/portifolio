@@ -116,8 +116,8 @@
       "description": "Um simples site de doação de sangue feito com Node.js e EJS.",
       "thumbnail": "/projects/calculator/calculator.png",
       "github": "https://github.com/sudo-victor/calculator",
-      "hasSite": false,
-      "site": "",
+      "hasSite": true,
+      "site": "https://affectionate-perlman-662127.netlify.app/",
       "widthDemos": "700px",
       "demos": ["/projects/calculator/page.png"]
     },{
@@ -129,8 +129,8 @@
       "description": "Um simples site de doação de sangue feito com Node.js e EJS.",
       "thumbnail": "/projects/bin2dec/bin2dec.png",
       "github": "https://github.com/sudo-victor/converterBin2Dec",
-      "hasSite": false,
-      "site": "",
+      "hasSite": true,
+      "site": "https://converterbin2dec.netlify.app/",
       "widthDemos": "700px",
       "demos": ["/projects/bin2dec/page.png"]
     },{
@@ -142,8 +142,8 @@
       "description": "Um simples site de doação de sangue feito com Node.js e EJS.",
       "thumbnail": "/projects/border-radius/border-radius.png",
       "github": "https://github.com/sudo-victor/border-radius",
-      "hasSite": false,
-      "site": "",
+      "hasSite": true,
+      "site": "https://affectionate-perlman-662127.netlify.app/",
       "widthDemos": "700px",
       "demos": ["/projects/border-radius/page.png"]
     }

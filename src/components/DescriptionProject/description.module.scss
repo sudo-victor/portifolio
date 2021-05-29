@@ -73,6 +73,16 @@ section.descriptionComponent {
             background: var(--primary);
             border-color: var(--primary);
             color: var(--black);
+
+            & > svg {
+              color: var(--black);
+              background: var(--black);
+              border-radius: 50%;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
           }
         }
       }

@@ -45,11 +45,11 @@ export default function Header({ isWhite }: HeaderProps) {
             <li>projetos <span className={styles.borderBottom}></span></li>
               </a>
             </Link>
-            {/* <Link href="/#contact">
+            <Link href="/#contact">
               <a onClick={() => handleClickLink("contact")}>
             <li>contato <span className={styles.borderBottom}></span></li>
               </a>
-            </Link> */}
+            </Link>
           </ul>
         </nav>
       </header>

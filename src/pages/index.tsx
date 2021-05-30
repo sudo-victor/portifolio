@@ -27,6 +27,7 @@ export default function Home() {
       <Skills />
       <CvButton />
       <Projects />
+      <Contact />
       </section>
 
     </div>

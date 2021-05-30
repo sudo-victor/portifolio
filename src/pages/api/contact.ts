@@ -18,10 +18,9 @@ export default function (req: NextApiRequest, res: NextApiResponse) {
     const mailData = {
       from: EMAIL,
       to: EMAIL,
-      subject: `Message From ${req.body.name}`,
-      text: req.body.message + " | Sent from: " + req.body.email,
-      html: `<div>${req.body.message}</div><p>Sent from:
-      ${req.body.email}</p>`
+      subject: `${req.body.name}<${req.body.email}>`,
+      text: `Autor: ${req.body.name}, ${req.body.email} - ${req.body.cellphone}\n\nAssunto: ${req.body.about}\n\n ${req.body.message}`,
+      html: `<h2>Autor:</h2> ${req.body.name}, ${req.body.email} - ${req.body.cellphone}<br/><br/><h2>Assunto:</h2> ${req.body.about}<br/><br/> ${req.body.message}`,
     }
 
     transporter.sendMail(mailData, function (err, info) {

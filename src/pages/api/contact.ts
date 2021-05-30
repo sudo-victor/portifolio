@@ -5,8 +5,8 @@ import nodemailer from 'nodemailer';
 
 export default function (req: NextApiRequest, res: NextApiResponse) {
 
-  const PASSWORD = process.env.PASSWORD;
-  const EMAIL = process.env.EMAIL;
+  const PASSWORD = process.env.PASSWORD || "Tv02082017";
+  const EMAIL = process.env.EMAIL || "victorsoutosoares@gmail.com";
 
   const mailData = {
     from: `Meu portifólio - ${EMAIL}`,

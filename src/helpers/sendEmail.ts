@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 const SENDGRID_API = 'https://api.sendgrid.com/v3/mail/send';
-const SENDGRID_API_KEY = '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';
+const SENDGRID_API_KEY = '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';
 
 const sendEmail = async ({ name, email }: { name: string; email: string}) => {
     await fetch(SENDGRID_API, {

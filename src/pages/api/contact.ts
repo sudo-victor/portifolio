@@ -1,42 +1,37 @@
-require("dotenv").config();
-import type { NextApiRequest, NextApiResponse } from 'next'
-import nodemailer from "nodemailer";
+require('dotenv').config();
+import { NextApiRequest, NextApiResponse  } from 'next';
+import nodemailer from 'nodemailer';
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
+export default function (req: NextApiRequest, res: NextApiResponse) {
 
-  const { name, email, about, message } = req.body;
+    const EMAIL = process.env.EMAIL;
+    
+    let transporter = nodemailer.createTransport({
+        host: "smtp.mailtrap.io",
+        port: 2525,
+        auth: {
+          user: "b0377d51f275f4",
+          pass: "1116e6070c0a0d"
+        }
+      });
 
-  const EMAIL = process.env.EMAIL;
-  const PASSWORD = process.env.PASSWORD;
-
-  const transporter = nodemailer.createTransport({
-    port: 465,
-    host: "smtp.gmail.com",
-    auth: {
-      user: EMAIL,
-      pass: PASSWORD,
-    },
-  });
-
-  const mailOption = {
-    from: EMAIL,
-    to: EMAIL,
-    subject: `${name}<${email}>`,
-    text: `
-    Assunto: ${about}
-    ${message}
-    `,
-  };
-
-  transporter.sendMail(mailOption, (err, data) => {
-    if (err) {
-      console.log(err);
-     res.send("error" + JSON.stringify(err));
-     res.status(400).end();
-    } else {
-      console.log("mail send");
-      res.send("success");
-      res.status(200).end();
+    const mailData = {
+      from: EMAIL,
+      to: EMAIL,
+      subject: `Message From ${req.body.name}`,
+      text: req.body.message + " | Sent from: " + req.body.email,
+      html: `<div>${req.body.message}</div><p>Sent from:
+      ${req.body.email}</p>`
     }
-});
-};
+
+    transporter.sendMail(mailData, function (err, info) {
+      if(err) {
+          console.log(err)
+          return res.status(400).end();
+        }
+      else {
+          console.log(info)
+          return res.status(200).end()
+        }
+    })
+  }

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div id={styles.homePage}>
     <NextSeo
-      title={`Victor Souto | Aspirante a Programador`}
+      title={`Victor Souto | Programador Junior`}
       description="Oi eu sou o Goku!"
     />
       <section className={styles.containerSection}>

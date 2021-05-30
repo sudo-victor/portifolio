@@ -1,3 +1,4 @@
+import { MouseEvent } from 'react';
 import Link from 'next/link';
 import { BiMenu } from 'react-icons/bi';
 
@@ -10,6 +11,12 @@ type HeaderProps = {
 
 export default function Header({ isWhite }: HeaderProps) {
   const {activatedNav, toggleNav, handleClickLink} = useHeader();
+
+  function handleClick(e: MouseEvent<HTMLAnchorElement>) {
+    window.location.hash = "about"
+    var [location] = window.location.href.split('#');
+    window.location.href = location
+  }
 
   return (
     <div className={styles.headerComponent}>
@@ -26,25 +33,27 @@ export default function Header({ isWhite }: HeaderProps) {
         <nav className={activatedNav ? styles.activated : ""}>
           <ul>
             <Link href="/#home">
-              <a onClick={() => handleClickLink("home")}>
+              <a className='anchor-scroll' onClick={() => handleClickLink("home")}>
             <li>home <span className={styles.borderBottom}></span></li>
               </a>
             </Link>
-            <Link href="/#about">
-              <a  onClick={() => handleClickLink("about")}>
+            
+            <a href="#about" className='anchor-scroll' onClick={handleClick}>
             <li>sobre <span className={styles.borderBottom}></span></li>
               </a>
-            </Link>
+            
             <Link href="/#skills">
               <a onClick={() => handleClickLink("skills")}>
             <li>skills <span className={styles.borderBottom}></span></li>
               </a>
             </Link>
+            
             <Link href="/#projects">
               <a onClick={() => handleClickLink("projects")}>
             <li>projetos <span className={styles.borderBottom}></span></li>
               </a>
             </Link>
+            
             <Link href="/#contact">
               <a onClick={() => handleClickLink("contact")}>
             <li>contato <span className={styles.borderBottom}></span></li>

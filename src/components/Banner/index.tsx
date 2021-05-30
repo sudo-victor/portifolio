@@ -26,7 +26,7 @@ export default function Banner() {
 
   return (
     <section className={styles.bannerComponent} id="home">
-      <p><strong>Aspirante a programador</strong><br/> 
+      <p><strong>programador junior</strong><br/> 
       <Typewriter
        onInit={handleTypeWriter}
        />

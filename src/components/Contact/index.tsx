@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Fade } from 'react-reveal';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
+import InputMask from "react-input-mask";
 import 'react-toastify/dist/ReactToastify.css';
 
 import styles from './contact.module.scss';
@@ -97,7 +98,7 @@ export default function Contact() {
         <form onSubmit={handleSubmit} data-scroll-reveal="enter top move 50px, after 0.1s">
           <input type="text" placeholder="Nome..." value={name} onChange={(e) => setName(e.target.value)}/>
           <input type="email" placeholder="E-mail..." value={email} onChange={(e) => setEmail(e.target.value)}/>
-          <input type="tel" placeholder="Telefone..." value={cellphone} onChange={(e) => setCellphone(e.target.value)}/>
+          <InputMask mask="(99) 99999-9999" value={cellphone} onChange={(e) => setCellphone(e.target.value)} maskPlaceholder="Telefone" alwaysShowMask/>
           <input type="text" placeholder="Assunto..." value={about} onChange={(e) => setAbout(e.target.value)}/>
           <textarea placeholder="Sua mensagem..." value={message} onChange={(e) => setMessage(e.target.value)}/>
 

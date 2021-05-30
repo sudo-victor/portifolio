@@ -43,7 +43,7 @@
     },{
       "name": "Linux",
       "color": "#e9a11d",
-      "about": "GNU/Linux é um sistema operacional Unix-like baseado no GNU e no kernel Linux que, como qualquer sistema operacional, maneja o hardware do computador e possibilita a execução de outros programas. "
+      "about": "O Linux é um sistema operacional, assim como o Windows da Microsoft e o Mac OS da Apple. Ele foi criado pelo finlandês Linus Torvalds, e o nome é a mistura do nome do criador com Unix, um antigo sistema operacional da empresa de mesmo nome."
     }
   ],
   "projects": [

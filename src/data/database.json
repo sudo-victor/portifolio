@@ -35,7 +35,7 @@
     },{
       "name": "Next.JS",
       "color": "#000000",
-      "about": "Next.js é um framework React com foco em produção e eficiência criado e mantido pela equipe da Vercel, o Nextjs busca reunir diversas funcionalidades como renderização hibrida e estática de conteúdo, suporte a TypeScript, pre-fetching, sistema de rotas, pacotes de funcionalidades e diversos plugins e exemplos para acelerar seu desenvolvimento fornecendo uma estrutura completa para você iniciar seu projeto. Inclusive esse site [e feito em Next.js"
+      "about": "Next.js é um framework React com foco em produção e eficiência criado e mantido pela equipe da Vercel, o Nextjs busca reunir diversas funcionalidades como renderização hibrida e estática de conteúdo, suporte a TypeScript, pre-fetching, sistema de rotas, pacotes de funcionalidades e diversos plugins e exemplos para acelerar seu desenvolvimento fornecendo uma estrutura completa para você iniciar seu projeto. Além do mais, este site foi feito com Next.js"
     },{
       "name": "Scrum",
       "color": "#2e75c3",
@@ -66,7 +66,7 @@
       "theme": "/projects/checklist/checklist.jpeg",
       "colorBackground": "#4dd8eb",
       "tags": ["EXPO", "REACT NATIVE", "JAVASCRIPT"],
-      "description": "Checklist é uma solução tanto para o foco no trabalho quanto para o foco em jogos. Uma lista To Do para auxiliar no seu foco",
+      "description": "Checklist é uma solução tanto para o foco no trabalho quanto para o foco em jogos. Uma lista To Do para auxiliar no dia a dia",
       "thumbnail": "/projects/checklist/icon.png",
       "github": "https://github.com/sudo-victor/checklist",
       "hasSite": false,
@@ -100,7 +100,7 @@
       "theme": "https://github.com/sudo-victor/doe/blob/master/public/logo.png?raw=true",
       "colorBackground": "#f9f9f9",
       "tags": ["NODE.JS", "JAVASCRIPT", "HTML5/CSS3", "POSTGRESQL"],
-      "description": "Projeto criado na MaratonaDev efetuado pela Rocketseat. Onde foi desenvolvido um site de doação de sangue.",
+      "description": "Projeto criado na MaratonaDev, efetuado pela Rocketseat, onde foi desenvolvido um site de doação de sangue.",
       "thumbnail": "/projects/doe/logo.png",
       "github": "https://github.com/sudo-victor/doe",
       "hasSite": false,
@@ -113,7 +113,7 @@
       "theme": "/projects/calculator/c-t.png",
       "colorBackground": "#191622",
       "tags": ["React.JS", "JAVASCRIPT", "HTML5/CSS3"],
-      "description": "Meu primeiro projeto feito com React.js criado para testar meus conhecimentos básico sobre React.",
+      "description": "Meu primeiro projeto feito com o framework React.js. Criado com objetivo de testar meus conhecimentos básico sobre o framework.",
       "thumbnail": "/projects/calculator/calculator.png",
       "github": "https://github.com/sudo-victor/calculator",
       "hasSite": true,
@@ -139,7 +139,7 @@
       "theme": "/projects/border-radius/br-t.png",
       "colorBackground": "#41414D",
       "tags": ["React.JS", "JAVASCRIPT", "HTML5/CSS3"],
-      "description": "Um projeto que gera o CSS do Border Radius de acordo com as especificações do usuário.",
+      "description": "Um app que gera o CSS do Border Radius de acordo com as especificações do usuário.",
       "thumbnail": "/projects/border-radius/border-radius.png",
       "github": "https://github.com/sudo-victor/border-radius",
       "hasSite": true,

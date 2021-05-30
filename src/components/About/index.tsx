@@ -10,9 +10,11 @@ export default function About() {
         <h2>Sobre Mim</h2>
 
         <p>
-          <strong>Olá</strong>, Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <strong>Olá</strong>, meu nome é Victor de Souto (acho que perceberam), 
+          tenho 18 anos e estudo programação acerca de 2 anos. Sempre fui apaixonado 
+          por tecnologia, quando conheci a área de desenvolvimento fullstack foi amor a primeira vista.
+          Já tive contato com algumas linguagens, como: <i>Python, PHP e o JAVA</i> por conta da faculdade, mas
+           atualmente estou focando meus estudos na linguagem <i>Javascript</i> e seu ecossistema.
         </p>
        </Fade>
      </div>

@@ -53,10 +53,11 @@ section.projectsComponent {
     align-items: center;
     justify-content: flex-start;
     gap: 15px;
+    flex-wrap: wrap;
 
     button {
       position: relative;
-      width: 200px;
+      width: calc((100vw - (2 * 5.3rem) - 30px) / 3);
       height: 250px;
 
       display: flex;
@@ -73,7 +74,7 @@ section.projectsComponent {
       cursor: pointer;
 
       img {
-        width: 100%;
+        width: 70%;
         height: auto;
 
         transition: all ease 200ms;
@@ -81,7 +82,7 @@ section.projectsComponent {
         color: var(--black);
 
         &:hover {
-          width: 120%;
+          width: 80%;
         }
       }
 

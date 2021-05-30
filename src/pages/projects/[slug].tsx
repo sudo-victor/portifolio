@@ -52,7 +52,7 @@ export default function Project({ project }: ProjectProps) {
 
         <Header isWhite/>
 
-        <Link href="/">
+        <Link href="/#projects">
           <button className={styles.goBack}>
             <BsArrowLeft color="#333" size={24}/> Voltar
           </button>

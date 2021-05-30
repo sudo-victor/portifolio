@@ -37,25 +37,31 @@ export default function Mockup({ project }: MockupProps) {
   return (
     <section className={styles.mockupComponent}>
 
-    <button 
-      className={styles.controlDemo}
-      onClick={handlePreviousDemo}
-      style={{ background: project.demos.length === 0 ? "#333" : "#34d1bf" }}
-    >
-          <BsArrowLeft size={32} color="#333" />
-    </button>
+    {
+      project.demos.length > 1 && (
+        <button 
+          className={styles.controlDemo}
+          onClick={handlePreviousDemo}
+        >
+              <BsArrowLeft size={32} color="#333" />
+        </button>
+      )
+    }
     
     <div className={styles.mockup} style={{width: project?.widthDemos}}>
       <img key={project.demos[indexDemo]} src={project.demos[indexDemo]} alt={`Demonstração ${project.name}`} />
     </div>
-    
+
+{
+  project.demos.length > 1 && (
     <button 
       className={styles.controlDemo}
       onClick={handleNextDemo}
-      style={{ background: project.demos.length === 0 ? "#333" : "#34d1bf" }}
     >
           <BsArrowRight size={32} color="#333" />
     </button>
+  )
+}
   
   </section>
   )

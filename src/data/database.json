@@ -146,6 +146,19 @@
       "site": "https://affectionate-perlman-662127.netlify.app/",
       "widthDemos": "700px",
       "demos": ["/projects/border-radius/page.png"]
+    },{
+      "id": "dropbox-clone",
+      "name": "Dropbox Clone",
+      "theme": "/projects/dropbox-clone/db-t.png",
+      "colorBackground": "#fff",
+      "tags": ["JAVASCRIPT", "HTML5/CSS3"],
+      "description": "O projeto consiste em um clone da página home do Dropbox, feito de forma raiz apenas com HTML5, CSS3 e JS. Nele é usado técnicas bastante interessante no header e no formulário, como a propriedade clip do CSS.",
+      "thumbnail": "/projects/dropbox-clone/dropbox-clone.png",
+      "github": "https://github.com/sudo-victor/dropbox-clone-raiz",
+      "hasSite": true,
+      "site": "https://sudo-victor.github.io/dropbox-clone-raiz/",
+      "widthDemos": "700px",
+      "demos": ["/projects/dropbox-clone/page-1.png", "/projects/dropbox-clone/page-2.png", "/projects/dropbox-clone/page-3.png"]
     }
   ]
 }

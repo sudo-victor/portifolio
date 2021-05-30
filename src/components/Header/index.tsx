@@ -12,12 +12,6 @@ type HeaderProps = {
 export default function Header({ isWhite }: HeaderProps) {
   const {activatedNav, toggleNav, handleClickLink} = useHeader();
 
-  function handleClick(e: MouseEvent<HTMLAnchorElement>) {
-    window.location.hash = "about"
-    var [location] = window.location.href.split('#');
-    window.location.href = location
-  }
-
   return (
     <div className={styles.headerComponent}>
 
@@ -38,9 +32,11 @@ export default function Header({ isWhite }: HeaderProps) {
               </a>
             </Link>
             
-            <a href="#about" className='anchor-scroll' onClick={handleClick}>
-            <li>sobre <span className={styles.borderBottom}></span></li>
+            <Link href="/#about">
+              <a onClick={() => handleClickLink("skills")}>
+                <li>sobre <span className={styles.borderBottom}></span></li>
               </a>
+            </Link>
             
             <Link href="/#skills">
               <a onClick={() => handleClickLink("skills")}>

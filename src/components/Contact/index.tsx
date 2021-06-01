@@ -88,7 +88,7 @@ export default function Contact() {
         <p>Resta alguma dúvida? Preencha os campos com os seguintes dados que em breve entraremos em contato.</p>
 
         <p>
-          E-MAIL: victorsoutosoares@gmail.com<br/><br/>
+          E-MAIL: contato@victorsouto.com.br<br/><br/>
           WHATSAPP: +55 21 99820-0330<br/><br/>
           ENDEREÇO: Jacarepaguá, RJ
         </p>

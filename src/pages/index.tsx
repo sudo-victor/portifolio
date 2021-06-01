@@ -15,7 +15,11 @@ export default function Home() {
     <div id={styles.homePage}>
     <NextSeo
       title={`Victor Souto | Programador Junior`}
-      description="Oi eu sou o Goku!"
+      description="Olá meu nome é Victor de Souto Soares, 
+      tenho 18 anos e estudo programação acerca de 2 anos. Sempre fui apaixonado 
+      por tecnologia e quando conheci a área de desenvolvimento fullstack foi amor a primeira vista.
+      Já tive contato com algumas linguagens de programação, como: Python, PHP e ultimamente o JAVA por conta da faculdade, mas
+       atualmente estou focando meus estudos na linguagem Javascript e seu ecossistema."
     />
       <section className={styles.containerSection}>
       <Header />

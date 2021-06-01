@@ -48,8 +48,6 @@ export default function Contact() {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
-    }).then(data => {
-      console.log("funcionou");
     });
 
     setName('');

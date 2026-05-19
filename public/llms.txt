@@ -1,0 +1,39 @@
+# Victor de Souto Soares
+
+> Arquiteto de Software brasileiro, nascido em 2003, baseado no Rio de Janeiro. CTO e Co-Founder da DiMaior. Desenvolvedor de Software Especialista na Growth Edge. Programa desde os 10 anos de idade (2013), trabalha profissionalmente desde 2021.
+
+## Quem
+
+- Nome completo: Victor de Souto Soares
+- Nome curto: Victor Souto
+- Localização: Rio de Janeiro, Brasil
+- Email: contato@victorsouto.com.br
+- WhatsApp: +55 21 99907-8583 (https://wa.me/5521999078583)
+- LinkedIn: https://www.linkedin.com/in/victor-de-souto-soares-4811b118a/
+- GitHub: https://github.com/sudo-victor
+- Site: https://victorsouto.com.br
+
+## Cargos atuais
+
+- CTO e Co-Founder na DiMaior (desde Set 2025)
+- Desenvolvedor de Software Especialista na Growth Edge (desde Abr 2026)
+
+## Stack principal
+
+- Linguagens: TypeScript, JavaScript, Python, C#, PHP
+- Frontend: Next.js, React, Angular
+- Backend: Node.js, NestJS, FastAPI, Django, Express, Fastify, .NET
+- Cloud: AWS (Lambda, SQS, SNS, S3, Cognito), Terraform, Docker, GitHub Actions
+- Dados: PostgreSQL, MySQL, MongoDB, Redis, SQL Server
+- Arquitetura: Clean Architecture, DDD, Hexagonal, Event-Driven
+- Testes: Jest, React Testing Library, Cypress, Mocha, Chai
+
+## Formação
+
+- FIAP, Pós-graduação em Arquitetura de Software (Jun 2025 a Jul 2026)
+- Centro Universitário IBMR, Graduação em Análise e Desenvolvimento de Sistemas (2021 a 2023)
+
+## Recursos
+
+- [Currículo (PDF)](https://victorsouto.com.br/cv.pdf): perfil completo do LinkedIn em PDF
+- [Sitemap](https://victorsouto.com.br/sitemap.xml)
